@@ -4,8 +4,7 @@ class LoadDrinks extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            drinks:[],
-            img:[]
+            drinksData:{},
         }
     }
     componentDidMount(){
@@ -13,32 +12,17 @@ class LoadDrinks extends React.Component {
         .then(res=>res.json())
         .then(data=>{
             
-            data.drinks.map((index) => {
-                console.log(index)
-                this.setState((prevState)=>({
-                     drinks: [...prevState.drinks, index.strDrink],
-                     img: [...prevState.img, index.strDrinkThumb]
-                }))
-                return this.state
-                
-            }) 
+            this.setState((prevState)=>({...prevState, drinksData:data.drinks}))
             
-        })
-    
-       
-        
+        })    
     }
     
     render(){
-       
-        var drinks = this.state.drinks.map((item, i)=>{return <h3 key={i}>{item}</h3>}); 
-        var img = this.state.img.map((item, i)=>{return <img key={i} src={item} alt={drinks} />});
-        console.log(img);
+        var drinksData = this.state;
+        console.log(drinksData)
         return (
             <div>
-               {drinks} 
-               {img}
-               
+               hi
             </div>
         );
     }

@@ -1,17 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Drink from './components/Drink/Drink.jsx';
-import LoadDrinks from './components/Drink/LoadDrinks/LoadDrinks';
+import LoadDrinks2 from './components/Drink/LoadDrinks/LoadDrinks2';
 function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Drink drinkId = "13940"/>
-        <Drink drinkId = "11007"/>
-        <LoadDrinks ingredient = "Whiskey"/>
-      </header>
+      
+        <LoadDrinks2 ingredient = "Whiskey" />
+      
     </div>
   );
 }
