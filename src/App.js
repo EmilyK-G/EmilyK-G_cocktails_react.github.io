@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import Drink from './components/Drink/Drink.jsx';
-import LoadDrinks2 from './components/Drink/LoadDrinks/LoadDrinks2';
+import LoadDrinks from './components/Drink/LoadDrinks/LoadDrinks';
 function App() {
   
   return (
     <div className="App">
-      
-        <LoadDrinks2 ingredient = "Whiskey" />
+
+        <LoadDrinks />
       
     </div>
   );
