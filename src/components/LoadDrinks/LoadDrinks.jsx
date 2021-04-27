@@ -1,12 +1,12 @@
 
 import React, {useState} from 'react';
-import DrinksPage from './DrinksPage';
-
+import DrinksPage from './DrinksPage/DrinksPage.jsx';
+import './LoadDrinks.css';
 
 
 function LoadDrinks() {
 
-    
+     
     const [initialFetch, setInitialFetch] = useState([]);
     
     //Fetching the cocktails' data from the ingredient clicked

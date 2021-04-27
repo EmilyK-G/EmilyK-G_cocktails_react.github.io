@@ -1,6 +1,7 @@
 
 import React, { useEffect , useState} from 'react';
-import Cocktails from './Cocktails/Cocktails';
+import Cocktails from './Cocktails/Cocktails.jsx';
+import './DrinksPage.css';
 
 function DrinksPage(props){
     const [drinkCard, setDrinkCard] = useState([]);

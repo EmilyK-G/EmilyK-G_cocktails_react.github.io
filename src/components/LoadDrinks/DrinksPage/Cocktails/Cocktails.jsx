@@ -1,5 +1,20 @@
 import React, {useState} from 'react';
+import './Cocktails.css';
 
+function IngredientsList(props) {
+    
+    let listItems = [];
+    for(let i=1; i<=15; i+=1){
+        const ingredient = props.myDrink[`strIngredient` + i];
+        const measure = props.myDrink[`strMeasure` + i];
+        if (typeof ingredient === 'string'){
+            listItems.push( <li key={ingredient}>{ingredient} ({measure})</li>)
+        }
+    }
+   
+    return (<ul>{listItems}</ul>)
+};
+//{props.myDrink.strIngredient1} ({props.myDrink.strMeasure1})
 const Cocktails = (props) => {
     const [drinkFront, setDrinkFront] = useState(true);
     
@@ -7,8 +22,10 @@ const Cocktails = (props) => {
     
         return (
             <div data-id={props.thisId} onClick={()=>{setDrinkFront(!drinkFront)}}>
-            <h4 data-id={props.thisId}>{props.myDrink.strDrink}</h4>
-            <ul data-id={props.thisId}>{props.myDrink.strIngredient1} ({props.myDrink.strMeasure1})</ul>
+                <h4 data-id={props.thisId}>{props.myDrink.strDrink}</h4>
+                
+                <IngredientsList myDrink={props.myDrink}/>
+                
             </div>
         )
     } else if (drinkFront === true){
