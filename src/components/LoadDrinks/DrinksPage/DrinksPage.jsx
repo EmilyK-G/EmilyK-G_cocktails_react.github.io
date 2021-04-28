@@ -7,8 +7,7 @@ function DrinksPage(props){
     const [drinkCard, setDrinkCard] = useState([]);
 
     var id = props.id;
-    //Getting each drink's details
-    
+  
     useEffect( () =>{
         var drinksPromises = 
             id.map( obj =>  
@@ -21,12 +20,13 @@ function DrinksPage(props){
         
     },[id])
     
-//Make a function that returns a <div> with the previous constant inside a map function.
-    
+
     return (
-        <div>
+        <div className="container drinks-container">
             {drinkCard.map((drink, i) =>(
-                <Cocktails myDrink = {drink.drinks[0]} thisId = {drink.drinks[0].idDrink} key={`cocktail-${i}`}/>
+                <div  className="container drink-container my-4 py-4 p-sm-4" key={`cocktail-${i}`}>
+                    <Cocktails myDrink = {drink.drinks[0]} thisId = {drink.drinks[0].idDrink} />
+                </div>
             ))}
 
         </div>

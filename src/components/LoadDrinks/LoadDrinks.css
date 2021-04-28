@@ -1,0 +1,14 @@
+.list-decoration{
+    background-color: transparent;
+    color: rgb(233, 187, 102);
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    text-shadow: 0.5px 2px 5px rgba(240, 239, 239, 0.698);
+    font-size: 2em;
+    font-family: 'Merienda', cursive;
+}
+.list-decoration:hover {
+    cursor: pointer;
+    color: wheat;
+}

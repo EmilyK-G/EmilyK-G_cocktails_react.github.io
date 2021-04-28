@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Footer.css';
 
 function Footer(){
 
     return(
-        <div>
-            Footer
-        </div>
+        <footer className="footer">
+            Created by: Emily K. Garcia
+        </footer>
     )
 }
 

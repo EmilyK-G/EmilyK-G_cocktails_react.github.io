@@ -1,0 +1,21 @@
+.footer {
+    background-color: rgba(51, 14, 14, 0.835);
+    color: white;
+    height: 70px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+@media screen and (max-width:576px) {
+    .footer {
+        position: fixed;
+        left:0;
+        bottom: 0;
+        height: 50px;
+        font-size: 1em;
+        padding: 10px;
+    }
+}

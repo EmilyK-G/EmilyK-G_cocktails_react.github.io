@@ -1,0 +1,30 @@
+.drinks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: rgba(197, 197, 218, 0.281);
+}
+div.drink-container {
+    background-color: rgba(255, 255, 255, 0.548);
+    box-shadow: 3px 3px 8px whitesmoke;
+    justify-content: space-between;
+    transition: 0.3s;
+    cursor: pointer;
+}
+div.drink-container:hover {
+    background-color: rgba(255, 255, 255, 0.657);
+    
+}
+@media screen and (min-width:576px) {
+
+    .container.drink-container {
+        width: 240px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .container.drink-container {
+        width: 300px;
+    }
+}

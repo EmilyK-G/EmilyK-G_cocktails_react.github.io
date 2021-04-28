@@ -25,7 +25,7 @@ function LoadDrinks() {
     
     return (
         <>
-            <select onChange={pageReload}>
+            <select onChange={pageReload} className= "list-decoration">
                 {ingredients.map((ingredient, i)=>{return (<option key={i}>{ingredient}</option>)})}
             </select>
             <DrinksPage 
