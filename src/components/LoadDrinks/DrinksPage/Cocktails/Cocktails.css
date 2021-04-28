@@ -29,6 +29,7 @@
     list-style: none;
 }
 
+
 @media screen and (max-width:576px) {
     .drink-name {
         font-size: 1.5em;

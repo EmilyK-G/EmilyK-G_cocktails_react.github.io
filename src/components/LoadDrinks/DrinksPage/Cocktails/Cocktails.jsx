@@ -25,7 +25,7 @@ const Cocktails = (props) => {
         return (
             <div data-id={props.thisId} onClick={()=>{setDrinkFront(!drinkFront)}}>
                 <h4 className="drink-name">{props.myDrink.strDrink}</h4>
-                <h5>Ingredients:</h5>
+                <h5>Ingredients</h5>
                 <IngredientsList myDrink={props.myDrink}/>
                 <h5>Instructions:</h5>
                 <p>{props.myDrink.strInstructions}</p>

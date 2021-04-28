@@ -5,6 +5,7 @@ import './DrinksPage.css';
 
 function DrinksPage(props){
     const [drinkCard, setDrinkCard] = useState([]);
+    
 
     var id = props.id;
   
